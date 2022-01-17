@@ -1,40 +1,29 @@
 import './App.css';
-import {useState,useEffect} from 'react';
+import Demo from './Demo'; 
+import User from './User';
 
-
+import {BrowserRouter,Routes,Route} from 'react-router-dom';
 
 function App() {
-  
-  let [users,setUsers] = useState([]);
+    return(
+      <div>
+        <h1>This is React App</h1>
+        
+        <BrowserRouter>
+          
+          <Routes>
+            
+            <Route path="/demo" element={<Demo/>}/>
+            <Route path="/user" element={<User/>}/>
+          
+          </Routes>
+        
+        </BrowserRouter>
 
 
- useEffect(()=>{
-    fetch('https://jsonplaceholder.typicode.com/users')
-    .then((response)=>response.json())
-    .then((data)=>{
-      setUsers(data);
-    })
-    .catch((err)=>{
-      console.log(err);
-    }) 
- },[])
- 
-  
-  return (
-    <div className="App">
-      {
-        users.map((user,index)=>{
-            return(
-              <div>
-                <h1 key={index}>{user.id}. {user.username}</h1>
-                <h2 key={index}>{user.name}</h2>  
-              </div>
-            )
-        })
+      </div>
+    )
 
-      }
-    </div>
-  );
 }
 
 export default App;
