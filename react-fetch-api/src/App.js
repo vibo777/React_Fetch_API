@@ -3,6 +3,7 @@ import Demo from './Demo';
 import User from './User';
 
 import {BrowserRouter,Routes,Route} from 'react-router-dom';
+import Dummy from './Dummy';
 
 function App() {
     return(
@@ -15,7 +16,7 @@ function App() {
             
             <Route path="/demo" element={<Demo/>}/>
             <Route path="/user" element={<User/>}/>
-          
+            <Route path="/dummy" element={<Dummy/>}/>
           </Routes>
         
         </BrowserRouter>

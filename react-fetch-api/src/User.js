@@ -11,6 +11,7 @@ function User(){
        .then((response)=>response.json())
        .then((data)=>{
          setUsers(data);
+         console.log(data);
        })
        .catch((err)=>{
          console.log(err);
@@ -25,7 +26,7 @@ function User(){
                return(
                  <div>
                    <h1 key={index}>{user.id}. {user.username}</h1>
-                   <h2 key={index}>{user.name}</h2>  
+                   <h2 key={user}>{user.name}</h2>  
                  </div>
                )
            })
