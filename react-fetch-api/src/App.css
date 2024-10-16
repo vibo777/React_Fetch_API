@@ -36,3 +36,26 @@
     transform: rotate(360deg);
   }
 }
+
+/* Css for Header  */
+.Header{
+  background-color: lightgray;
+}
+
+ /* Css for products */
+.product_list{
+  display: flex;
+  width: 100%;
+ }
+.card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:300px;
+  width: 20%;
+  background-color: cornflowerblue;
+  margin: 10px;
+}
+.card_details{
+  width: 70%;
+}
