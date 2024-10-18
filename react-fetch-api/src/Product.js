@@ -1,7 +1,15 @@
+import {useState} from 'react';
+
 function Product(Props){
 
     function doSometing(){
         console.log("Yes sir what can i do for you ?");
+    }
+
+    const [isAvailable,setIsAvailable] = useState('Yes');
+
+    function CheckAvailiblity(){
+        setIsAvailable('No');
     }
 
     return(
@@ -16,6 +24,8 @@ function Product(Props){
                     console.log(event);
                     doSometing("Vaibhav");
                 }}>Buy Now</button>
+                <p>Available: {isAvailable}</p>    
+                <button onClick={CheckAvailiblity}>Click Me</button>    
             </div>    
         </div>
     )
