@@ -68,3 +68,11 @@
   width: 90px;
   padding :10px
 }
+
+/* Css for Category section  */
+.category_component{
+  padding: 10px 30px;
+}
+.category_list{
+  display: flex;
+}
