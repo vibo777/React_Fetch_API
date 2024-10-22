@@ -8,9 +8,9 @@ function Product(Props){
 
     const [isAvailable,setIsAvailable] = useState('Yes');
 
-    function CheckAvailiblity(){
-        setIsAvailable('No');
-    }
+    // function CheckAvailiblity(){
+    //     setIsAvailable('No');
+    // }
 
     return(
         <div className="card">
@@ -25,7 +25,9 @@ function Product(Props){
                     doSometing("Vaibhav");
                 }}>Buy Now</button>
                 <p>Available: {isAvailable}</p>    
-                <button onClick={CheckAvailiblity}>Click Me</button>    
+                <button onClick={(()=>{
+                    setIsAvailable('No');
+                })}>Click Me</button>    
             </div>    
         </div>
     )
