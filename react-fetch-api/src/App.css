@@ -76,3 +76,12 @@
 .category_list{
   display: flex;
 }
+
+/* Css for product array */
+.box{
+  border: 1px solid black;
+  width: fit-content;
+  margin: 20px;
+  padding: 10px;
+  background-color: lightgray;
+}
