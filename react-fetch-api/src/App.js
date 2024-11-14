@@ -1,7 +1,8 @@
 //import { useState } from 'react';
 import './App.css'; 
-import ProductList from './ProductList';
-import HeaderComponent from './HeaderComponent';
+// import ProductList from './ProductList';
+// import HeaderComponent from './HeaderComponent';
+import NewProduct from './NewProduct';
 
 function App() {
 
@@ -18,8 +19,9 @@ function App() {
 
       <div>
         <h1>Welcome Everyone !!!</h1>
-        <HeaderComponent/> 
-        <ProductList/> 
+        {/* <HeaderComponent/> 
+        <ProductList/>  */}
+        <NewProduct/>
      </div>
     )
 }

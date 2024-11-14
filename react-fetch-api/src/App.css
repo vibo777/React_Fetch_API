@@ -85,3 +85,12 @@
   padding: 10px;
   background-color: lightgray;
 }
+
+/* Css for new product */
+
+.newproduct{
+  height: 150px;
+  width: 170px;
+  background-color: lightgray;
+  padding: 10px;
+}
