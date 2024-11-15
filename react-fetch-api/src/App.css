@@ -94,3 +94,19 @@
   background-color: lightgray;
   padding: 10px;
 }
+
+/* Css for users */
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.users-area{
+  
+  height:300px;
+  width: 23%;
+  padding: 20px;
+  margin: 10px;
+  background-color: aquamarine;
+}
