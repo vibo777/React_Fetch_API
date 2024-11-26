@@ -110,3 +110,11 @@
   margin: 10px;
   background-color: aquamarine;
 }
+
+/* Css for posts area */
+.blog_posts{
+  height: auto;
+  margin: 20px 0;
+  padding: 20px;
+  background-color: aliceblue;
+}
